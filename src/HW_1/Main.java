@@ -16,6 +16,7 @@ public class Main {
         Person son = mom.newChildBuilder()
                 .setName("Onton")
                 .build();
+        son.happyBirthday();
 
         System.out.println(son);
 

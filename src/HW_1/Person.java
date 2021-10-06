@@ -27,7 +27,11 @@ public class Person {
     }
 
     public PersonBuilder newChildBuilder() {
-        return new PersonBuilder();
+        PersonBuilder temp = new PersonBuilder();
+        temp.setSurname(this.surname)
+                .setAge(0)
+                .setAddress(this.currentCity);
+        return temp;
     }
 
     public boolean hasAge() {
